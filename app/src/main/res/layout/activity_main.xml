@@ -21,10 +21,17 @@
         android:src="@mipmap/ic_launcher" />
 
     <Button
-        android:id="@+id/btnShowName"
+        android:id="@+id/btnStartActivity"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="@string/click_on_me"
+        android:text="start Activity"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnStartForResult"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="start Activity for result"
         android:textSize="20sp" />
 
     <EditText
@@ -32,9 +39,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:hint="@string/please_enter_your_name"
+        android:hint="enter your age"
         android:inputType="number"
         android:maxLength="2" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
