@@ -6,12 +6,10 @@
 
     <TextView
         android:id="@+id/txtAge"
+        style="@style/TextViewStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#0000FF"
-        android:text="@string/hello_world"
-        android:textColor="@color/redColor"
-        android:textSize="30sp" />
+        android:text="@string/hello_world" />
 
     <ImageView
         android:id="@+id/imgProfile"
