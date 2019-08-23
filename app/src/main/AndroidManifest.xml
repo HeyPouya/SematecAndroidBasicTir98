@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestHandlerActivity">
+        <activity android:name=".TestHTMLActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -21,8 +21,17 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".TestWebViewActivity"/>
-        <activity android:name=".TestDatabaseActivity"/>
+        <activity android:name=".TestVideoViewActivity"></activity>
+        <activity
+            android:name=".TestDialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".TestAlertDialogActivity" />
+        <activity android:name=".TestMenuActivity" />
+        <activity android:name=".TestStartBroadcastActivity" />
+        <activity android:name=".TestPermissionActivity" />
+        <activity android:name=".TestHandlerActivity" />
+        <activity android:name=".TestWebViewActivity" />
+        <activity android:name=".TestDatabaseActivity" />
         <activity android:name=".TestAsyncHttpActivity" />
         <activity android:name=".TestUrlConnectionActivity" />
         <activity android:name=".TestThreadActivity" />
@@ -34,6 +43,14 @@
         <activity android:name=".ThirdActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".TestService" />
     </application>
 
 </manifest>
